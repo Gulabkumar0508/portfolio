@@ -34,11 +34,7 @@
             <div class="home-content">
                 <h6 class="poppinss">Hi, I'm</h6>
                 <h1 class="t-white" style="font-family: 'Pacifico', cursive; font-size: 45px ">Gulab Kumar</h1>
-<<<<<<< HEAD
                 <p class="poppinss">I am a motivated and detail-oriented IT graduate eager to kick-start my career as a python django developer. Throughout my academic journey, I have cultivated a strong foundation in programming principles and gained hands-on experience in various aspects of IT. I am excited to apply my skills and knowledge to real-world projects in the dynamic field of software development.</p>
-=======
-                <p class="poppinss">I am a motivated and detail-oriented IT graduate eager to kick-start my career as a Python django developer. Throughout my academic journey, I have cultivated a strong foundation in programming principles and gained hands-on experience in various aspects of IT. I am excited to apply my skills and knowledge to real-world projects in the dynamic field of software development.</p>
->>>>>>> 8be9afd6f392dbf97248a954db9e873030e43374
                 <a href="{% static 'pdf/Gulab_kumar.pdf' %}" target="_blank">
                     <button class="btn poppins">Download CV</button>
                 </a>
@@ -207,6 +203,26 @@
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
         <script>
+             document.addEventListener("DOMContentLoaded", function() {
+            var successMessage = document.querySelector(".success-message");
+
+            // Function to show the success message
+            function showSuccessMessage(message) {
+                successMessage.textContent = message;
+                successMessage.style.display = "block";
+
+                // Hide the message after 3 seconds
+                setTimeout(function() {
+                    successMessage.style.display = "none";
+                }, 3000);
+            }
+
+            // Example: show success message when the page loads (you can call this function as needed)
+            {% if success_message %}
+                showSuccessMessage("{{ success_message }}");
+            {% endif %}
+        });
+
             // Initialize ScrollReveal for smooth animations
             ScrollReveal().reveal('.fade-in', {
                 origin: 'bottom',
