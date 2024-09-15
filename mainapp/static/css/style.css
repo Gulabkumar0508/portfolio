@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Keyframe Animation for Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for text animation */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for image animation */
+@keyframes imageMove {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color: rgb(0, 0, 40);
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+#navbar {
+    color:rgb(0, 0, 40) ;
+    line-height: 4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: .5px solid #ffffff52;
+    border-width: 80%;
+    margin-bottom: 1rem;
+    height: 70px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+
+#navbar a {
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+
+
+#navbar ul {
+    list-style: none;
+}
+
+#navbar ul li {
+    margin: 0px 1rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+}
+
+.right {
+    display: none;
+}
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.nav-col a:hover {
+    border-radius: .4rem;
+    color: rgb(0, 0, 40);
+    background-color: #fff;
+}
+
+
+.home-left,
+.home-right {
+    width: 85%;
+    padding: 5.5rem;
+}
+
+.home-right {
+    padding: 0;
+}
+
+/* Styling for 'Hi, I'm' */
+.home-left h6 {
+    color: #4A90E2;
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.home-left h1 {
+    font-size: 2rem;
+    animation: fadeInLeft 3s ease forwards ;
+    font-family: 'Pacifico', cursive;
+    color: #4A90E2;
+    margin-top: 0.2rem;
+    display: inline-block;
+}
+
+
+.home-left p {
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    margin-top: 0.1rem;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    text-align: justify;
+}
+
+.home-left button {
+    font-weight: bolder;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    width: auto;
+}
+
+/* Image container styling */
+.home-right {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    text-align: justify;
+}
+
+
+.home-right img {
+    width: 350px;
+    border-radius: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20px;
+    animation: imageMove 4s ease-in-out infinite; /* Animation added */
+
+}
+
+.circle {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 70%;
+    padding: .5rem;
+    position: relative;
+}
+
+#mainImage img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#mainImage img:hover {
+    transform: scale(1.05) rotate(2deg);
+    filter: brightness(0.5);
+}
+
+/* About Section Styles */
+#about {
+    background-color: #00274d;
+    color: #ffffff;
+    padding: 8rem 2rem;
+    min-height: 60vh;
+    margin-top: 0;
+    padding-top: 4rem;
+}
+
+.section-title {
+    margin-bottom: 1rem; /* Reduce bottom margin */
+    font-size: 2rem;
+
+}
+
+.section-title .highlight {
+    color: rgb(0,0,40);
+    font-size: 2rem;
+}
+
+
+.about-left,
+.about-right {
+    width: 60%;
+}
+
+.about-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left img {
+    width: 60%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 1rem;
+}
+
+.about-right {
+    padding-right: 9rem;
+    font-family: 'Playbill', 'sans-serif', Serif;
+
+}
+
+.about-content {
+    font-family: 'Playbill', 'sans-serif', Serif; /* Use Playbill for text */
+}
+
+
+.about-content h1 {
+    margin-top: 0.5rem;
+    font-family: 'Playbill', 'sans-serif' , 'serif'; /* Font for headings */
+    font-size:45px;
+}
+
+.about-content p {
+    line-height: 1.6; /* Improve readability */
+    font-size: 1.2rem; /* Adjust font size for better readability */
+}
+
+
+/* Skills *//* Skills Section */
+#skills {
+    margin-top: 2rem;
+    padding: 8rem 2rem; /* Increase padding for more vertical space */
+    background-color: rgb(0, 0, 40); /* Dark background for the section */
+    width: 100%; /* Full width for the section */
+    min-height: 80vh;
+    padding-top: 4rem;
+}
+
+.section-skills{
+    font-family: 'Pacifico', cursive;
+}
+
+.skills-left,
+.skills-right {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.skills-left img {
+    width: 50%; /* Full width for the image */
+    border-radius: 1rem; /* Optional: Adds rounded corners */
+
+}
+
+.skills-right {
+    padding-left: 4rem; /* Space between image and content */
+}
+
+.skillss-container {
+    width: 95%;
+}
+
+.bar {
+    margin: 1.5rem 0; /* Reduced margin for better spacing */
+    position: relative; /* Positioned relative to contain absolute children */
+}
+
+.python,
+.django,
+.mysql,
+.html,
+.css,
+.js,
+.learning {
+    height: 0.8rem; /* Increased height for better visibility */
+    border-radius: 12px;
+}
+
+.python {
+    width: 90%;
+    background-color: #e54c21;
+}
+
+.django {
+    width: 80%;
+    background-color: #00a0e4;
+}
+
+.mysql {
+    width: 75%;
+    background-color: blue;
+}
+
+.html {
+    width: 75%;
+    background-color: #e34f26; /* Changed to a more typical HTML color */
+}
+
+.css {
+    width: 70%;
+    background-color: #264de4; /* Changed to a more typical CSS color */
+}
+
+.js {
+    width: 60%;
+    background-color: #f7df1e; /* Changed to a more typical JS color */
+}
+
+.learning {
+    width: 100%;
+    background-color: #61dbfb;
+}
+
+.bar-content {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 0.8rem; /* Adjusted font size */
+    font-family: 'Roboto', sans-serif; /* Font family */
+}
+
+.left {
+    left: 0;
+    padding-left: 1rem;
+}
+
+.right-skills {
+    right: 0;
+    padding-right: 1rem;
+}
+
+
+
+#Projects {
+    margin-top: 2rem;
+    padding: 8rem 2rem; /* Increase padding for more vertical space */
+    background-color: #00274d; /* Dark background for the section */
+    width: 100%; /* Full width for the section */
+    min-height: 80vh; /* Minimum height for the section */
+    display: flex; /* Flexbox layout for inline items */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+#Projects {
+    margin-top: 2rem;
+    padding: 8rem 2rem;
+    background-color: #00274d;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.projects-item {
+    width: 20rem;
+    height: 30rem; /* Set fixed height for all project boxes */
+    margin: 1rem;
+    background: rgb(0,0,40);
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure equal spacing inside */
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.projects-item h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.projects-item p {
+    line-height: 20px;
+    font-size: .9rem;
+    flex-grow: 1; /* Allow the description to expand in height */
+}
+
+.buttons {
+    margin-top: 1rem;
+    width: 100%; /* Make buttons span the width of the container */
+}
+
+.btn {
+    margin: 0.5rem;
+    font-size: 1rem;
+    color: #df77ad;
+    cursor: pointer;
+    padding: 0.75rem 1.2rem;
+    border: 1px solid #dc85a7;
+    border-radius: 0.4rem;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    width: 100%; /* Ensure the buttons take up the full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.btn:hover {
+    color: #1f1f38;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.live {
+    color: #1f1f38;
+    background-color: #da7fa8;
+}
+
+
+
+
+#Contact{
+    margin-top: 2rem;
+    padding: 6rem 2rem; /* Increase padding for more vertical space */
+    background-color: rgb(0,0,40); /* Dark background for the section */
+    width: 100%; /* Full width for the section */
+    min-height: 80vh; /* Minimum height for the section */
+    display: flex; /* Flexbox layout for inline items */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.form {
+    width: 60%; /* Increase the form container width */
+    padding: 2rem; /* Increase horizontal padding */
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.form button{
+    font-weight: bolder;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: auto;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+
+.form-div input,
+textarea {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: .5rem;
+    width: 100%;
+    margin: 0.5rem 0rem;
+    font-size: 1rem; /* Slightly increase font size */
+    background: transparent;
+    padding: 1rem 1.5rem; /* Increase padding for larger input fields */
+    color: rgb(255, 255, 255);
+    resize: none;
+}
+
+
+
+/* Footer Section  */
+#footer {
+    background-color:#00274d;
+    padding: 1%;
+    padding-bottom: 2rem;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    transition: all .5s;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+
+.font-awesome {
+    margin: 1.1rem auto;
+}
+
+.font-awesome li i {
+    background-color: #1f1f38;
+    padding: 0.6rem;
+    border: 1px solid #1f1f38;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.font-awesome li i:hover {
+    border: 1px solid #1f1f38;
+    border-radius: .5rem;
+    background: transparent;
+    color: #1f1f38;
+}
+
+#footer p {
+    color: white;
+    font-size: .9rem;
+}
+
+
+
+/* Utility Classes */
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+.s-around {
+    justify-content: space-around;
+}
+
+.s-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+
+.p-relative {
+    position: relative;
+}
+
+.t-white {
+    color: #fff;
+}
+
+.bg-color {
+    background-color: #1f1f38;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.f-2 {
+    font-size: 2rem;
+}
+
+.m-b-1 {
+    margin-bottom: 1rem;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.h-50 {
+    height: 50vh;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.m-top {
+    margin-top: 1rem;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.btn {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.75rem 1.2rem;
+    border: 1px #1f1f38;
+    border-radius: 0.4rem;
+    background: transparent;
+    background-color: #1f1f38;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.btn:hover {
+    color: #1f1f38;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.live {
+    color: white;
+    background-color: #1f1f38;
+}
+
+
+

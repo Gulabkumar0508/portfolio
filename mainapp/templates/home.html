@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gulab's portfolio </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>`
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white" style="font-family: 'Pacifico', cursive; font-size: 45px ">Gulab Kumar</h1>
+<<<<<<< HEAD
+                <p class="poppinss">I am a motivated and detail-oriented IT graduate eager to kick-start my career as a python django developer. Throughout my academic journey, I have cultivated a strong foundation in programming principles and gained hands-on experience in various aspects of IT. I am excited to apply my skills and knowledge to real-world projects in the dynamic field of software development.</p>
+=======
+                <p class="poppinss">I am a motivated and detail-oriented IT graduate eager to kick-start my career as a Python django developer. Throughout my academic journey, I have cultivated a strong foundation in programming principles and gained hands-on experience in various aspects of IT. I am excited to apply my skills and knowledge to real-world projects in the dynamic field of software development.</p>
+>>>>>>> 8be9afd6f392dbf97248a954db9e873030e43374
+                <a href="{% static 'pdf/Gulab_kumar.pdf' %}" target="_blank">
+                    <button class="btn poppins">Download CV</button>
+                </a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <img src="{% static 'images/gulab.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+    <section id="about">
+     <h1 class="section-title t-center my-2 t-white f-2">About <span class="highlight">Me</span></h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <!-- Replace the given link with your secondary image link -->
+                <img src="{% static 'images/dog.png' %}" alt="Profile Image" >
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Gulab Kumar</h1>
+                    <p class="t-white poppins">Hi, I’m Gulab Kumar, a passionate Python Django developer with a Bachelor’s degree in Information Technology from Isra University. My education has provided me with a strong foundation in computer science principles, and I’ve developed a keen expertise in Python and Django through various hands-on projects and practical experience.
+                    <br><br>
+                    I specialize in building robust and scalable web applications using Django. My skills include designing dynamic web solutions, creating RESTful APIs, and integrating third-party services. I am dedicated to solving complex problems and delivering high-quality, maintainable code.
+                    <br><br>
+                    I am eager to contribute to innovative projects and collaborate with teams that share my enthusiasm for technology. Let’s connect and explore how I can bring value to your next projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+    <section id="skills">
+        <h1 class="section-skills t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+            <div class="skills-left flex s-center items-center">
+                <img src="{% static 'images/man1.jpg' %}" alt="Skills Image">
+            </div>
+
+            <div class="skills-right flex items-center">
+                <div class="skillss-container">
+                    <div class="learning bar p-relative">
+                        <span class="bar-content left">Learning</span>
+                        <span class="bar-content right-skills">100%</span>
+                    </div>
+                    <div class="python bar p-relative">
+                        <span class="bar-content left">Python</span>
+                        <span class="bar-content right-skills">90%</span>
+                    </div>
+                    <div class="django bar p-relative">
+                        <span class="bar-content left">Django</span>
+                        <span class="bar-content right-skills">80%</span>
+                    </div>
+                    <div class="mysql bar p-relative">
+                        <span class="bar-content left">MySQL</span>
+                        <span class="bar-content right-skills">75%</span>
+                    </div>
+                    <div class="html bar p-relative">
+                        <span class="bar-content left">HTML</span>
+                        <span class="bar-content right-skills">75%</span>
+                    </div>
+                    <div class="css bar p-relative">
+                        <span class="bar-content left">CSS</span>
+                        <span class="bar-content right-skills">70%</span>
+                    </div>
+                    <div class="js bar p-relative">
+                        <span class="bar-content left">JavaScript</span>
+                        <span class="bar-content right-skills">60%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Projects Section -->
+    <section id="Projects">
+        <h1 class="t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container">
+            <div class="projects-item">
+                <h1 class="t-white poppins">E-commerce-website</h1>
+                <p class="t-white poppins">A robust Django-based web application designed for the seamless purchase of products. This platform features a dynamic product catalog with advanced filtering options, a secure shopping cart system, user authentication, and integrated order management. Built with a focus on user experience, security, and scalability, it serves as an efficient solution for online sales.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Gulabkumar0508/GS-SHOP.git" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://www.linkedin.com/posts/gulab-kumar_django-ecommerce-webdevelopment-activity-7233042786034282496-9tn8?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+            <div class="projects-item">
+                <h1 class="t-white poppins">Desi foods</h1>
+                <p class="t-white poppins">Developed a "Desi Food" website featuring cart management, product listings, and customer order processing. Implemented functionality for adding, removing, and updating cart items, and created forms for customer contact and order placement.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Gulabkumar0508/desi_foods.git" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://www.linkedin.com/posts/gulab-kumar_webdevelopment-django-python-activity-7232066736454336513-qQyI?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+            <div class="projects-item">
+                <h1 class="t-white poppins">My Portfolio</h1>
+                <p class="t-white poppins">Developed a personal portfolio using Django, featuring a contact form along with sections for showcasing skills, projects, and a downloadable CV. Designed to highlight my capabilities and achievements as a Python developer while facilitating easy communication with potential employers.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Gulabkumar0508/desi_foods.git" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://www.linkedin.com/posts/gulab-kumar_webdevelopment-django-python-activity-7232066736454336513-qQyI?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" >
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="phone" id="" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea name="message" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+             {% if success_message %}
+            <div class="success-message">
+                <p>{{ success_message }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/gulab-kumar/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/Gulabkumar0508" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Error By Night
+                </span></p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            // Initialize ScrollReveal for smooth animations
+            ScrollReveal().reveal('.fade-in', {
+                origin: 'bottom',
+                distance: '50px',
+                duration: 1000,
+                easing: 'ease-in-out',
+                opacity: 0
+            });
+
+            // Intersection Observer for scroll animations
+            document.addEventListener('DOMContentLoaded', () => {
+                const elements = document.querySelectorAll('.animate-on-scroll');
+
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('in-view');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                elements.forEach(element => {
+                    observer.observe(element);
+                });
+            });
+        </script>
+</body>
+</html>
